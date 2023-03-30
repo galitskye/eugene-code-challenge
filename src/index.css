@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ArialMT';
+  src: url('./fonts/ArialMT.ttf');
+}
+
+@font-face {
+  font-family: 'ITCZapfDingbats';
+  src: url('./fonts/ITCZapfDingbats.ttf');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+@layer components {
+  .main-border {
+    @apply border-2 border-black border-solid;
+  }
+}
